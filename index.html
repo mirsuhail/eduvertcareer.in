@@ -440,9 +440,11 @@
                         $contactForm.append(msgLoad);
                     }
                 }).done(function (data) {
+                    $(".alert--success").remove();
                     $contactForm.append(msgSuccess);
                     $("input[type=text], textarea").val("");
                 }).fail(function () {
+                    $(".alert--error").remove();
                     $contactForm.append(msgError);
                 }).always(function () {
                     $contactForm.find('.alert--loading').hide();
