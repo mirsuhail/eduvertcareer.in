@@ -566,3 +566,4 @@ textarea{resize:none;min-height:100px}
 .error-page span.color-default{font-size:55px}
 .error-page p{display:table;margin:30px auto 0;width:46%}
 .masonry li{float:left;display:flex}
+.sub-title-cus{display:inline-block;font-size:15px;font-style:italic;margin-top:45px;width:100%}
