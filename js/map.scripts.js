@@ -6,7 +6,7 @@ function init() {
 	
 	var mapOptions = {
 		zoom: 14,
-		center: new google.maps.LatLng(40.672324, -74.357372), // New York
+		center: new google.maps.LatLng(34.084238, 74.819559), // ECC , 
 		styles: 
 		[
 			{
@@ -140,7 +140,7 @@ function init() {
 	var map = new google.maps.Map(mapElement, mapOptions);
 
 	var marker = new google.maps.Marker({
-		position: new google.maps.LatLng(40.672324, -74.357372),
+	    position: new google.maps.LatLng(34.084238, 74.819559),
 		map: map,
 		icon: 'http://unicoderbd.com/theme/html/patron/images//map-marker.png',
 		title: 'Snazzy!'
