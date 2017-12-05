@@ -30,7 +30,7 @@
 .sub-title{color:#030d26}
 .social-icon i{color:#fff}
 .social-icon li a i.fa:hover{background-color:#fb9d5b}
-.top-left > span, .language span,
+.top-left > span, .language span,.top-right > span,
 .top-right ul li:before{color:#fff}
 .top-left > span > a, .top-left .language select{color:#b7b7b7}
 .top-right ul li a{color:#b7b7b7}
