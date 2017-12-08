@@ -63,7 +63,7 @@
 .navbar-nav .dropdown-menu ul{left:100%;top:0}
 .carousel-inner > .item > img{display:block;height:auto;max-width:inherit;width:100%}
 }
-@media screen and (min-width:768px) and (max-width:1024px){.navbar-right .dropdown-menu{right:0;left:auto;}
+@media screen and (min-width:768px) and (max-width:1900px){.navbar-right .dropdown-menu{right:0;left:auto;}
 .navbar-nav .dropdown-menu ul{left:inherit;right:100%;top:0}
 }
 @media screen and (max-width:767px){.header-top{display:none}

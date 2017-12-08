@@ -61,7 +61,7 @@ textarea{resize:none;min-height:100px}
 .navbar-default .navbar-nav > li > a{line-height:57px;font-weight:500;text-transform:uppercase;display:block;font-size:13px}
 .dropdown-menu li.dropdown a i{float:right;line-height:24px}
 .dropdown-menu{position:absolute;top:100%;left:0;z-index:1000;float:left;min-width:220px;font-size:13px;text-align:left;display:none;list-style:none}
-.navbar-nav .dropdown-menu > li > a{display:block;padding:7px 20px;clear:both;line-height:2;font-weight:500;text-transform:uppercase;color:#fff}
+.navbar-nav .dropdown-menu > li > a{display:block;padding:4px 12px;clear:both;line-height:2;font-weight:500;text-transform:uppercase;color:#fff}
 .top-right ul.dropdown-menu{padding:10px 0;background:#fff;margin-top:10px;left:20px;min-width:200px}
 .navbar-nav > li{float:left;padding:0 20px}
 .navbar-default .navbar-nav li ul.mega-menu{-moz-transition:all 300ms ease-in-out 0s;-ms-transition:all 300ms ease-in-out 0s;-o-transition:all 300ms ease-in-out 0s;-webkit-transition:all 300ms ease-in-out 0s;transition:all 300ms ease-in-out 0s}
