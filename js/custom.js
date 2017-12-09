@@ -7,7 +7,7 @@ $(window).resize(function () {
     console.log('resize called');
     var width = $(window).width();
     if (width <= 727 ) {
-        $('.substhird').css("display", "block");;
+        $('.substhird').parent().css("z-index", "9999");
     }
     else {
        
