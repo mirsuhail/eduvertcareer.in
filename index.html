@@ -113,6 +113,12 @@
                                 <div class="col-md-6">
                                     <button class="btn btn-primary margin-top-20" id="btnSubmit" type="submit" name="submit">Submit</button>
                                 </div>
+                                <div class="col-md-12">
+                                    <div class="error-handel">
+                                        <div id="success">Your email sent Successfully, Thank you.</div>
+                                        <div id="error">Error occurred while sending email. Please try again later.</div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
@@ -534,12 +540,14 @@
                         $contactForm.append(msgLoad);
                     }
                 }).done(function (data) {
-                    $(".alert--success").remove();
-                    $contactForm.append(msgSuccess);
+                    //$(".alert--success").remove();
+                    //$contactForm.append(msgSuccess);
                     $("input[type=text], textarea").val("");
+                    $("#success").slideDown("slow"); setTimeout(function () { $("#success").slideUp("slow"); }, 5000); form.reset();
                 }).fail(function () {
-                    $(".alert--error").remove();
-                    $contactForm.append(msgError);
+                    $("#error").slideDown("slow"); setTimeout(function () { $("#error").slideUp("slow"); }, 5000); 
+                    //$(".alert--error").remove();
+                    //$contactForm.append(msgError);
                 }).always(function () {
                     $contactForm.find('.alert--loading').hide();
                 });
