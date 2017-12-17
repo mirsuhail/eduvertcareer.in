@@ -32,7 +32,7 @@ textarea{resize:none;min-height:100px}
 .section-title-area-left .sub-title{width:100%;margin-bottom:30px}
 .inner-title{position:relative;margin-bottom:30px;display:inline-block}
 .inner-title:before{bottom:-12px;content:"";height:3px;position:absolute;width:50px}
-.header-top{padding:10px 0;font-size:13px}
+.header-top{padding:10px 0;font-size:13px; background-color: rgba(0, 0, 0, 1.7);}
 .top-left > span{float:left;margin-right:30px}
 .top-left .language select{-moz-appearance:none;background:rgba(0, 0, 0, 0) none repeat scroll 0 0;border:medium none}
 .top-right ul{float:right;margin-right:0}
@@ -43,7 +43,7 @@ textarea{resize:none;min-height:100px}
 .top-right span.fa{padding:5px 0 0 5px}
 .header.fixed-header .header-top{display:none}
 .header.fixed-header{background-color:rgba(0, 0, 0, 1);z-index:999}
-.header{animation-fill-mode:both;left:0;margin:0;padding:0;position:absolute;top:0;width:100%;z-index:999}
+.header{animation-fill-mode:both;left:0;margin:0;padding:0;position:inherit;top:0;width:100%;z-index:999}
 @keyframes menu_sticky{0%{margin-top:-100px}
 50%{margin-top:-90px}
 100%{margin-top:0}
@@ -83,8 +83,8 @@ textarea{resize:none;min-height:100px}
 .carousel-indicators{position:absolute;bottom:20px;left:50%;z-index:1 !important;width:60%;padding-left:0;transform:translateX(-50%);text-align:center}
 .slider-item .carousel-indicators li{position:relative;width:10px;height:10px;background-color:transparent;border:2px solid #fff;border-radius:50%;display:inline-block;cursor:pointer;margin:0 3px}
 .slider-item .carousel-indicators .active{width:15px;height:15px;margin:-2px 2px;background:#fff;border:2px solid;transition:all 300ms ease-in-out}
-.request-quote{position:absolute;right:3%;top:50%}
-.quote-title{display:inline-block;padding:25px 30px;width:100%}
+.request-quote{position:absolute;right:3%;top:32%}
+.quote-title{display:inline-block;padding:10px 30px;width:100%}
 .quote-title p{margin-bottom:0}
 .quote-form{padding:0 30px 30px}
 #slider .carousel-caption span{-moz-animation-delay:0.2s;-ms-animation-delay:0.2s;-o-animation-delay:0.2s;-webkit-animation-delay:0.2s;animation-delay:0.2s;-moz-animation-duration:1s;-ms-animation-duration:1s;-o-animation-duration:1s;-webkit-animation-duration:1s;animation-duration:1s;visibility:hidden;opacity:0}

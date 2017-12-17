@@ -61,12 +61,13 @@
 .navbar-default .navbar-nav li > ul.dropdown-menu{visibility:hidden;display:block;opacity:0;-ms-transform:scale(0.9);-o-transform:scale(0.9);-webkit-transform:scale(0.9);-moz-transform:scale(0.9);transform:scale(0.9)}
 .navbar-default .navbar-nav li:hover > ul.dropdown-menu{visibility:visible;opacity:1;-ms-transform:scale(1);-o-transform:scale(1);-webkit-transform:scale(1);-moz-transform:scale(1);transform:scale(1)}
 .navbar-nav .dropdown-menu ul{left:100%;top:0}
-.carousel-inner > .item > img{display:block;height:auto;max-width:inherit;width:100%}
+.carousel-inner > .item > img{display:block;height:520px;max-width:inherit;width:100%}
 }
 @media screen and (min-width:768px) and (max-width:1900px){.navbar-right .dropdown-menu{right:0;left:auto;}
 .navbar-nav .dropdown-menu ul{left:inherit;right:100%;top:0}
 }
 @media screen and (max-width:767px){.header-top{display:none}
+#btnEnquiry{display:none;}
 .header{position:inherit}
 .main-nav{background-color:rgba(0, 0, 0, 1)}
 .navbar-nav > li > a > i,

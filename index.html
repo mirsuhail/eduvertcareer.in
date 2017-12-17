@@ -23,9 +23,106 @@
     <script src='https://www.google.com/recaptcha/api.js'></script>
     <!-- Favicon -->
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.ico">
-   
+    <style>
+        .leftbtn,
+        .rightbtn {
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            height: 2.5em;
+            margin: auto;
+            background: #fb9d5b;
+            padding-bottom: 40px;
+            border-radius: 6px;
+        }
+
+        .leftbtn {
+            left: 0;
+            -webkit-transform-origin: 0 50%;
+            -moz-transform-origin: 0 50%;
+            -ms-transform-origin: 0 50%;
+            -o-transform-origin: 0 50%;
+            transform-origin: 0 50%;
+            -webkit-transform: rotate(-90deg) translate(-50%, 50%);
+            -moz-transform: rotate(-90deg) translate(-50%, 50%);
+            -ms-transform: rotate(-90deg) translate(-50%, 50%);
+            -o-transform: rotate(-90deg) translate(-50%, 50%);
+            transform: rotate(-90deg) translate(-50%, 50%);
+        }
+
+        .rightbtn {
+            right: 0;
+            -webkit-transform-origin: 100% 50%;
+            -moz-transform-origin: 100% 50%;
+            -ms-transform-origin: 100% 50%;
+            -o-transform-origin: 100% 50%;
+            transform-origin: 100% 50%;
+            -webkit-transform: rotate(90deg) translate(50%, 50%);
+            -moz-transform: rotate(90deg) translate(50%, 50%);
+            -ms-transform: rotate(90deg) translate(50%, 50%);
+            -o-transform: rotate(90deg) translate(50%, 50%);
+            transform: rotate(90deg) translate(50%, 50%);
+        }
+
+        .btnzindex {
+            z-index: 999;
+        }
+    </style>
 </head>
 <body class="page-wrapper home-page page-load">
+
+
+
+    <button type="button" id="btnEnquiry" class="btn rightbtn btnzindex" data-toggle="modal" data-target=".enquiry"><b>Send Enquiry</b></button>
+
+    <div class="modal fade enquiry" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+
+                <!-- <div class="container" style="width: 80%; margin: 0 auto;">-->
+
+                <div class=" bg-white">
+                    <div class="quote-title color-white">
+                        <h4 class="color-white">Quick Contact</h4>
+                        <p>Your Name,Email & Mobile No. will be highly confidential.</p>
+                    </div>
+                    <form class="quote-form" id="contact-form" method="post">
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="name" name="name" placeholder="Name">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="email" name="_replyto" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="phone" name="phone" placeholder="Phone Number">
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" id="textarea" name="comment" placeholder="Comment"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <input type="hidden" name="_subject" value="QUICK CONTACT" />
+                                    <input style="visibility: hidden" type="text" name="_gotcha">
+                                    <!--<div class="g-recaptcha" data-sitekey="6LcIyzoUAAAAAGLrc_M7Bwdv3fT94MtxXpphH-69"></div>-->
+                                    <!--localhost-->
+                                    <!-- <div class="g-recaptcha" data-sitekey="6LdKzzoUAAAAAIIYRq1xbT0jDN33P-DTW9uqFibT"></div> eduvertcareer.in-->
+                                    <div class="g-recaptcha" data-sitekey="6Lf5zjoUAAAAANuCcFajYQpFdn8o7awoFoEgKxBW"></div>
+                                    <!--GIT-->
+                                </div>
+                                <div class="col-md-6">
+                                    <button class="btn btn-primary margin-top-20" id="btnSubmit" type="submit" name="submit">Submit</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+                <!--</div>-->
+            </div>
+        </div>
+    </div>
+
 
     <div class="preloader">
         <div id="ajaxloader3">
@@ -112,7 +209,7 @@
 
                                                     </li>
                                                     <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-angle-left" aria-hidden="true"></i>Iran</a>
-                                                        <ul class="dropdown-menu substhird" >
+                                                        <ul class="dropdown-menu substhird">
                                                             <li><a href="colleges/tums.html">Tehran University of Medical Sciences</a></li>
                                                             <li><a href="colleges/sums.html">Shiraz University of Medical Sciences</a></li>
                                                         </ul>
@@ -259,39 +356,7 @@
                     </div>
                 </div>
             </div>
-            <div class="request-quote bg-white">
-                <div class="quote-title color-white">
-                    <h4 class="color-white">Quick Contact</h4>
-                    <p>Your Name,Email & Mobile No. will be highly confidential.</p>
-                </div>
-                <form class="quote-form" id="contact-form" method="post">
-                    <div class="form-group">
-                        <input type="text" class="form-control" id="name" name="name" placeholder="Name">
-                    </div>
-                    <div class="form-group">
-                        <input type="text" class="form-control" id="email" name="_replyto" placeholder="Email">
-                    </div>
-                    <div class="form-group">
-                        <input type="text" class="form-control" id="phone" name="phone" placeholder="Phone Number">
-                    </div>
-                    <div class="form-group">
-                        <textarea class="form-control" id="textarea" name="comment" placeholder="Comment"></textarea>
-                    </div>
-                    <div class="form-group">
-                        <input type="hidden" name="_subject" value="QUICK CONTACT" />
-                        <input style="visibility: hidden" type="text" name="_gotcha">
-                        <!--<div class="g-recaptcha" data-sitekey="6LcIyzoUAAAAAGLrc_M7Bwdv3fT94MtxXpphH-69"></div>-->
-                        <!--localhost-->
-                        <!-- <div class="g-recaptcha" data-sitekey="6LdKzzoUAAAAAIIYRq1xbT0jDN33P-DTW9uqFibT"></div> eduvertcareer.in-->
-                        <div class="g-recaptcha" data-sitekey="6Lf5zjoUAAAAANuCcFajYQpFdn8o7awoFoEgKxBW"></div>
-                        <!--GIT-->
-                    </div>
-                    <div class="fomr-group">
-                        <button class="btn btn-primary margin-top-20" id="btnSubmit" type="submit" name="submit">Submit</button>
-                    </div>
 
-                </form>
-            </div>
         </div>
     </section>
     <!--Welcome Section-->
