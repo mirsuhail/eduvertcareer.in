@@ -140,7 +140,8 @@
 #footer-bottom li a, .copyright span, .copyright span a{color:#fff}
 #footer-bottom li a:hover, .copyright span a:hover{color:#fb9d5b}
 #header-2 .main-nav{border-bottom:1px solid #5a5a5a}
-#header-2 .header-top, #header-2 .main-nav{background-color:transparent}
+ #header-2 .main-nav{background-color:#030d26}
+#header-2 .header-top {background-color:rgba(0, 0, 0, 1.7);}
 .service-left{background-color:#000615}
 .color-white{color:#fff}
 .service-left .service-text{color:#a5a5a5}
