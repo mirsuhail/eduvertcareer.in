@@ -3,7 +3,7 @@
 .main-nav{background-color:#030d26;}
 .gallery-item:hover .overlay{background-color:rgba(251, 157, 91, 0.8)}
 .testimonials-carousels.owl-carousel .owl-item img{border-color:rgba(255, 255, 255,0.5);}
-#banner:before{background-color:rgba(29, 27, 28, 0.8)}
+#banner:before{background-color:rgba(29, 27, 28, 0.4)}
 .overlay-2:before{background-color:rgba(251, 157, 91, 0.9)}
 .carousel-inner .item::before,
 .ad-banner::before,
